@@ -1,0 +1,14 @@
+{{ block title }}Round {{ subsession.round_number }} of {{ C.NUM_ROUNDS }}{{ endblock }}
+{{ block content }}
+    <p>
+        
+        In this round, your role is:   {{  player.role  }}.
+    </p>
+   <p>
+       Try guessing B's investment amount
+    {{ formfields }}
+   </p>
+    
+    {{ next_button }}
+
+{{ endblock }}

@@ -1,0 +1,11 @@
+{{ block title }}Round {{ subsession.round_number }} of {{ C.NUM_ROUNDS }}{{ endblock }}
+{{ block content }}
+    <p>
+        In this round, your role is:   {{  player.role  }}.
+    </p>
+    <p>
+        {{ formfield "write_message" }}
+    </p>
+    {{ next_button }}
+
+{{ endblock }}

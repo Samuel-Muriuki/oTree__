@@ -1,0 +1,20 @@
+{{ block title }}Round {{ subsession.round_number }} of {{ C.NUM_ROUNDS }}{{ endblock }}
+{{ block content }}
+    <p>
+       
+        In this round, your role is:   {{  player.role  }}.
+    </p>
+    <p>
+        How confident are you with this guess?     <b>(1 is least; 9 is most)</b> 
+    </p>
+    <p>
+        Least &nbsp;
+        {{ for choice in form.confident_a }}
+            {{ choice }}
+        {{ endfor }}
+        &nbsp; Most
+   </p>
+    
+    {{ next_button }}
+
+{{ endblock }}

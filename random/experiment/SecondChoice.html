@@ -1,0 +1,17 @@
+{{ block title }}Round {{ subsession.round_number }} of {{ C.NUM_ROUNDS }}{{ endblock }}
+{{ block content }}
+    <p>
+       
+        In this round, your role is:   {{  player.role  }}.
+    </p>
+    <p>
+        A has sent you the following message: {{ group.write_message}}
+
+    </p>
+    <p>
+        Revenue split as dictated by A: {{ group.write_words }}
+    </p>
+    
+    {{ next_button }}
+
+{{ endblock }}

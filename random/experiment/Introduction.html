@@ -1,0 +1,14 @@
+{{ block title }}Introduction{{ endblock }}
+{{ block content }}
+    <p>
+        Your partner is player {{ partner.id_in_subsession }}.
+    </p>
+
+    <p>
+        Here are the pairs that have already played together: {{ session.past_groups }}
+    </p>
+    {{ include C.INSTRUCTIONS_TEMPLATE }}
+
+    {{ next_button }}
+
+{{ endblock }}

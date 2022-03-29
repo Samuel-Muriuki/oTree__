@@ -1,0 +1,14 @@
+{{ block title }}Choose your desired mesage{{ endblock }}
+{{ block content }}
+    <p>
+    Below is a list of messages that could be used in communication. 
+    </p>
+
+    {{ formfields }}
+    <p>
+    {{ next_button }}
+    </p>
+
+    {{ include C.INSTRUCTION_TEMPLATE }}
+
+{{ endblock }}

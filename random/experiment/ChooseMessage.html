@@ -1,0 +1,20 @@
+{{ block title }}Round {{ subsession.round_number }} of {{ C.NUM_ROUNDS }}{{ endblock }}
+{{ block content }}
+    <p>
+        
+        In this round, your role is:   {{  player.role  }}.
+    </p>
+    <p>
+    
+        If your answer is “Yes”, please say words in the following box to B 
+        {{ formfield "write_words" }}
+        If your answer is “No”, please say words in the following box to B
+        {{ formfield "write_words" }}
+
+
+        You will receive 70% of the revenue and I will receive 30% of the revenue.
+   </p>
+    
+    {{ next_button }}
+
+{{ endblock }}
